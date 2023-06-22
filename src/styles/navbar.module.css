@@ -1,0 +1,44 @@
+.nav{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(236, 158, 158);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.contact{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.back{
+    background-color: black;
+    color: white;
+    margin-left: 10vw;
+    border-radius: 25%;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    border: 1px solid black;
+
+}
+
+.searchbar{
+   height: 30px;
+
+}
+
+/* .searchbtn{
+   
+} */

@@ -39,16 +39,16 @@ const App = () =>{
   return (
     <div className="App">
       <ToastContainer/>
-      <BrowserRouter>
       <div className="container">
         <Navbar/>
+        <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>     
+          <Route exact path="/contact-list-application" element={<Home />}></Route>     
           
           <Route exact path="/updateContact/:id" element={<UpdateContacts />}></Route>   
-        </Routes>
-        </div>
+        </Routes> 
       </BrowserRouter>
+      </div>
     </div>
   );
 }

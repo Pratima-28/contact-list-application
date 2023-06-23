@@ -6,7 +6,6 @@ import { ToastContainer } from "react-toastify";
 
 import Navbar from "./Navbar";
 import Home from "./Home";
-import AddContact from "./AddContact";
 import UpdateContacts from "./UpdateContacts";
 import '../styles/index.css'
 
@@ -41,12 +40,14 @@ const App = () =>{
     <div className="App">
       <ToastContainer/>
       <BrowserRouter>
+      <div className="container">
         <Navbar/>
         <Routes>
-          <Route exact path="/" element={<Home />}/>     
+          <Route exact path="/" element={<Home />}></Route>     
           
-          <Route exact path="/updateContact/:id" element={<UpdateContacts />}/>    
+          <Route exact path="/updateContact/:id" element={<UpdateContacts />}></Route>   
         </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

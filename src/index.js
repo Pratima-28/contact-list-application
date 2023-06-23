@@ -14,9 +14,7 @@ root.render(
 
   <React.StrictMode>
     <Provider store={store}>
-          <div className='container'>
           <App />
-          </div>
     </Provider>
   </React.StrictMode>
  

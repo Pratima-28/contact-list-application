@@ -33,6 +33,7 @@ body{
     position: fixed;
     margin-left: 340px;
     margin-top: 420px;
+    cursor: pointer;
 }
 
 .contactList{
@@ -81,4 +82,5 @@ div .liInner li{
     width: 50px;
     border: 1px solid rgb(190, 180, 161);
     border-radius: 40%;
+    cursor: pointer;
 }

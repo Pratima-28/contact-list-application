@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
 import Styles from '../styles/updateContact.module.css'
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const UpdateContacts = (props) =>{
 
@@ -30,13 +30,16 @@ const UpdateContacts = (props) =>{
     const handleSubmit= (e)=>{
         e.preventDefault();
 
+
         const checkEmail = contacts.find(contact => contact.id !== parseInt(id) && contact.email === email);
         const checkNumber = contacts.find(contact => contact.id !== parseInt(id) && contact.phone === parseInt(phone));
 
+        //to check if all fields are filled properly
         if (!email || !phone || !name) {
             return toast.warning("Please fill in all fields!");
         }
 
+        //to check if the email or number already exists in the contacts list
         if (checkEmail) {
             return toast.error("This email already Exists!");
         }
@@ -52,13 +55,10 @@ const UpdateContacts = (props) =>{
             phone
         }
 
+        // to update contacts 
         dispatch({type: 'EDIT_CONTACT',data});
         toast.success('Contact updated successfully')
         console.log('data', data);
-        navigate('/');
-    }
-
-    const hanvleNavigate = ()=>{
         navigate('/');
     }
 
@@ -95,12 +95,13 @@ const UpdateContacts = (props) =>{
                 className={Styles.submitBtn} 
                 value={'Update'}  
                 />
+                <Link to={"/"}>
                 <button 
                 className={Styles.submitBtn}
-                onClick={()=> hanvleNavigate()}
                 >
                 Back
                 </button> 
+                </Link>
             </div>
         </form>
         </div>

@@ -1,6 +1,4 @@
-
-const initialState=[]
-export const contacts = (state= initialState, action) =>{
+export const contacts = (state= [], action) =>{
 
     switch(action.type){
         case 'FETCH_CONTACTS':

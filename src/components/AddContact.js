@@ -21,13 +21,15 @@ const AddContact = (props) =>{
     const handleSubmit= (e)=>{
         e.preventDefault();
 
-        //to check if the email or number already exists in the contacts list
         const checkEmail = contacts.find(contact => contact.email === email && email)
         const checkNumber = contacts.find(contact => contact.number === parseInt(phone) && phone)
 
+        //to check if all fields are filled properly
         if(!name || !phone || !email){
             return toast.warning("Please fill in all fields!");
         }
+
+        //to check if the email or number already exists in the contacts list
         if (checkEmail) {
             return toast.error("This email already Exists!");
         }
@@ -43,13 +45,14 @@ const AddContact = (props) =>{
             phone
         }
 
-        //dispatch data 
+        //to add contact 
         dispatch({type: 'ADD_CONTACT', data});
          toast.success("Contact added successfully")
         console.log('data', data);
         props.handleClick();
     }
     return(
+        //JSX
     <div className={Styles.container}>
         <div className={Styles.box}>
             <h1>Add Contact</h1>

@@ -13,6 +13,7 @@ import '../styles/index.css'
 
 const App = () =>{
 
+  //fetching contacts
   const dispatch = useDispatch();
   useEffect(()=>{
     const data=[];
@@ -43,8 +44,6 @@ const App = () =>{
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home />}/>     
-
-          <Route exact path="/addContact" element={<AddContact />}/>    
           
           <Route exact path="/updateContact/:id" element={<UpdateContacts />}/>    
         </Routes>

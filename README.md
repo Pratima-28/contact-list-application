@@ -1,3 +1,27 @@
+#  Problem statement:
+  Create a contact list app to manage contacts.
+  
+#  Technology Used:
+  React Js
+  Java Script
+  Redux
+  CSS
+  HTML
+  
+#  To install all the dependences of the project, run the following command:
+  
+  git clone https://github.com/shakti1590/Contact-list-using-react.git
+  npm install
+  npm start
+
+#  Source Code:
+  Link : https://github.com/Pratima-28/contact-list-application.git
+
+#  Deployment Link:
+  Link : https://contact-list-bdac1.firebaseapp.com/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -10,7 +10,7 @@
   
 #  To install all the dependences of the project, run the following command:
   
-  git clone https://github.com/shakti1590/Contact-list-using-react.git
+  git clone https:https://github.com/Pratima-28/contact-list-application.git
   npm install
   npm start
 
